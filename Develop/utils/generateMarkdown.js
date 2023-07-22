@@ -1,20 +1,134 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+
+function renderLicenseBadge(licenceChoice) {
+ let licenceBadge;
+  switch (licenceChoice) {
+    case 'MIT':
+    licenceBadge= `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](${renderLicenseLink(licenceChoice)})`;
+      break;
+    case 'APACHE 2.0':
+    licenceBadge= `[![License: APACHE 2.0](https://img.shields.io/badge/License-APACHE_2.0-yellow.svg)](${renderLicenseLink(licenceChoice)})`;
+      break;
+    case 'GPL 3.0':
+    licenceBadge= `[![License: APACHE 2.0](https://img.shields.io/badge/License-GPL_3.0-yellow.svg)](${renderLicenseLink(licenceChoice)})`;
+      break;
+    case 'BSD 3':
+    licenceBadge= `[![License: APACHE 2.0](https://img.shields.io/badge/License-BSD_3.0-yellow.svg)](${renderLicenseLink(licenceChoice)})`;
+      break;      
+    default:
+     licenceBadge='';
+  }
+  return licenceBadge;
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(licenseChoice) {
+  let licenceLink;
+  switch (licenseChoice) {
+    case 'MIT':
+    licenceLink= 'https://opensource.org/license/mit/';    
+      break;
+    case 'APACHE 2.0':
+      licenceLink= 'https://opensource.org/licenses/Apache-2.0';
+      break;
+    case 'GPL 3.0':
+      licenceLink= 'https://opensource.org/license/gpl-3-0/';
+      break;
+    case 'BSD 3':
+      licenceLink= 'https://opensource.org/license/bsd-3-clause/';
+      break;
+    default:
+      licenceLink='';
+  }
+  return licenceLink;
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(licenceName) {
+  let licenceSection;
+  if(licenceName!='none'){
+  licenceSection= `Licence used for this project- ${licenceName}`;
+  }
+  return licenceSection;
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  let licence;
+ const badge= renderLicenseBadge(`${data.licence}`);
+ if(badge===''){
+  licence='N/A';
+ }
+ else{
+ licence= renderLicenseSection(`${data.licence}`);
+ }
   return `# ${data.title}
-
+${licence}
 `;
 }
 
 module.exports = generateMarkdown;
+// ## Description
+  
+// ${data.description}
+
+// ## Table of Contents
+
+// * [Installation](#installation)
+// * [Usage](#usage)
+// * [License](#license)
+// * [Contributing](#contributing)
+// * [Tests](#tests)
+// * [Questions](#question)
+// * [Credits](#credits)
+
+// ## Installation
+
+// To install required dependencies, run the following command :
+
+//        ${data.dependencies}
+
+
+// ## Usage
+
+// ${data.usage}
+
+// ## License
+// ${license} 
+// To get more information in relation to licence types, please visit this link - [https: //choosealicense.com/](https://choosealicense.com/)
+// ## Contributing
+
+// ${data.Contribution}
+
+// ## Tests
+
+// To run tests on it, run the following command :
+
+//       ${data.test}
+
+
+// ## Contribution
+
+//  To contribute to this application, ${data.contribution}.
+// Here are the steps needed for doing that:
+// - Fork the repo
+// - Create a feature branch (git checkout -b NAME-HERE)
+// - Add stages (git add .)
+// - Commit your new feature (git commit -m 'Add some feature')
+// - Push your branch (git push)
+// - Create a new Pull Request
+
+// After reviewing, your feature will be merged.
+
+// ## Contact Information
+// If you have any questions, Feel free to contact me with  the information below:
+// Github: ${data.username}
+// Email: ${data.email}
+
+// ## Credits
+
+// ### Collaborators
+// ${data.credits}
