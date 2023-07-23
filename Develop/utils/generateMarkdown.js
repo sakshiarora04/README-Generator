@@ -61,7 +61,7 @@ if(badge===''){
   licence='N/A';
  }
 else{
-licence= renderLicenseSection(`${data.licence}`);
+  licence= renderLicenseSection(`${data.licence}`);
  }
 // return md file
 return `# ${data.title}
@@ -92,7 +92,7 @@ return `# ${data.title}
   
   ## License
 
-  ${licence} 
+  ${licence}
 
   To get more information in relation to licence types, please visit this link - [https: //choosealicense.com/](https://choosealicense.com/)
   
