@@ -82,6 +82,6 @@ https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 
 ## Contact Information
 
-Github Username: sakshiarora04
+Github Username: [sakshiarora04](https://github.com/sakshiarora04)
 
 Email id: sakshiarora245@gmail.com
