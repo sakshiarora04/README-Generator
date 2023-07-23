@@ -77,7 +77,7 @@ return `# ${data.title}
   - [License](#license)
   - [Contribution](#contribution)
   - [Tests](#tests)
-  - [Contact Information](#contact-information)
+  - [Questions](#questions)
   - [Credits](#credits)
   
   ## Installation
@@ -87,7 +87,7 @@ return `# ${data.title}
          ${data.dependencies}
     
   ## Usage
-  
+
   ${data.usage}
   
   ## License
