@@ -2,7 +2,7 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit/)
   ## Description
   
-   This README generator is command line application that runs with node.js and allows user to quickly generate README.md file. This will allow a project creator to spend more time working on finishing the project and less time on creating a good README file.
+  This README generator is command line application that runs with node.js and allows user to quickly generate README.md file. This will allow a project creator to spend more time working on finishing the project and less time on creating a good README file.
   
   ## Table of Contents
   
@@ -22,7 +22,7 @@
     
   ## Usage
   
-   The application takes all responses and will dynamically generate markdown file for your project with Descriptiom, Table of contents, Installation, Uses, Licence, Contributions etc in the output folder and message will displayed as 'Successfully created README.md'. The README will also include badge for selected licence.  
+  The application takes all responses and will dynamically generate markdown file for your project with Descriptiom, Table of contents, Installation, Uses, Licence, Contributions etc in the output folder and message will displayed as 'Successfully created README.md'. The README will also include badge for selected licence.   
   
   ## License
 
@@ -32,7 +32,7 @@
   
   ## Contribution
 
-  To contribute to this application, clone the repo, install node.js, run npm init, install dependencies, run node index.js..
+  To contribute to this application,   clone the repo, install node.js, run npm init, install dependencies, run node index.js..
   Here are the steps needed for doing that:
   - Fork the repo
   - Create a feature branch (git checkout -b NAME-HERE)
@@ -53,8 +53,8 @@
 
   Github: [sakshiarora04](https://github.com/sakshiarora04)
 
-  EmailId: sakshiarora245@gmsil.com
-  
+  EmailId: sakshiarora245@gmail.com
+x``  
   ## Credits
   
   ### Collaborators
