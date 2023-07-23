@@ -23,54 +23,54 @@ const promptUser = () => {
         name: 'username',
         message: questions[0],
       },
-    //   {
-    //     type: 'input',
-    //     name: 'email',
-    //     message: questions[1],
-    //   },
-    //   {
-    //     type: 'input',
-    //     name: 'title',
-    //     message: questions[2],
-    //   },
-    //   {
-    //     type: 'input',
-    //     name: 'description',
-    //     message: questions[3],
-    //   },
+      {
+        type: 'input',
+        name: 'email',
+        message: questions[1],
+      },
+      {
+        type: 'input',
+        name: 'title',
+        message: questions[2],
+      },
+      {
+        type: 'input',
+        name: 'description',
+        message: questions[3],
+      },
       {
         type: 'list',
         name: 'licence',
         message: questions[4],
         choices:[ 'MIT','APACHE 2.0','GPL 3.0','BSD 3','none'],
       },
-    //   {
-    //     type: 'input',
-    //     name: 'dependencies',
-    //     message: questions[5],
-    //     default: 'npm inquirer@^8.2.4',
-    //   },
-    //   {
-    //     type: 'input',
-    //     name: 'test',
-    //     message: questions[6],
-    //     default: 'npm test',
-    //   },
-    //   {
-    //     type: 'input',
-    //     name: 'usage',
-    //     message: questions[7],
-    //   },
-    //   {
-    //     type: 'input',
-    //     name: 'contribution',
-    //     message: questions[8],
-    //   },
-    //   {
-    //     type: 'input',
-    //     name: 'credits',
-    //     message: questions[9],
-    //   },
+      {
+        type: 'input',
+        name: 'dependencies',
+        message: questions[5],
+        default: 'npm inquirer@^8.2.4',
+      },
+      {
+        type: 'input',
+        name: 'test',
+        message: questions[6],
+        default: 'npm test',
+      },
+      {
+        type: 'input',
+        name: 'usage',
+        message: questions[7],
+      },
+      {
+        type: 'input',
+        name: 'contribution',
+        message: questions[8],
+      },
+      {
+        type: 'input',
+        name: 'credits',
+        message: questions[9],
+      },
     ]);
   }
 // TODO: Create a function to initialize app

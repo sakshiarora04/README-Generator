@@ -8,13 +8,13 @@ function renderLicenseBadge(licenceChoice) {
     licenceBadge= `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](${renderLicenseLink(licenceChoice)})`;
       break;
     case 'APACHE 2.0':
-    licenceBadge= `[![License: APACHE 2.0](https://img.shields.io/badge/License-APACHE_2.0-yellow.svg)](${renderLicenseLink(licenceChoice)})`;
+    licenceBadge= `[![License: APACHE 2.0](https://img.shields.io/badge/License-APACHE_2.0-blue.svg)](${renderLicenseLink(licenceChoice)})`;
       break;
     case 'GPL 3.0':
-    licenceBadge= `[![License: APACHE 2.0](https://img.shields.io/badge/License-GPL_3.0-yellow.svg)](${renderLicenseLink(licenceChoice)})`;
+    licenceBadge= `[![License: APACHE 2.0](https://img.shields.io/badge/License-GPL_3.0-violet.svg)](${renderLicenseLink(licenceChoice)})`;
       break;
     case 'BSD 3':
-    licenceBadge= `[![License: APACHE 2.0](https://img.shields.io/badge/License-BSD_3.0-yellow.svg)](${renderLicenseLink(licenceChoice)})`;
+    licenceBadge= `[![License: APACHE 2.0](https://img.shields.io/badge/License-BSD_3.0-purple.svg)](${renderLicenseLink(licenceChoice)})`;
       break;      
     default:
      licenceBadge='';
@@ -48,10 +48,9 @@ function renderLicenseLink(licenseChoice) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(licenceName) {
-  let licenceSection;
-  if(licenceName!='none'){
-  licenceSection= `Licence used for this project- ${licenceName}`;
-  }
+ 
+ const licenceSection= `Licence used for this project- ${licenceName}`;
+  
   return licenceSection;
 }
 
@@ -66,69 +65,63 @@ function generateMarkdown(data) {
  licence= renderLicenseSection(`${data.licence}`);
  }
   return `# ${data.title}
-${licence}
+  ${badge}
+  ## Description
+  
+  ${data.description}
+  
+  ## Table of Contents
+  
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contribution](#contribution)
+  * [Tests](#tests)
+  * [Contact Information](#contact information)
+  * [Credits](#credits)
+  
+  ## Installation
+  
+  To install required dependencies, run the following command :
+  
+         ${data.dependencies}
+  
+  
+  ## Usage
+  
+  ${data.usage}
+  
+  ## License
+  ${license} 
+  To get more information in relation to licence types, please visit this link - [https: //choosealicense.com/](https://choosealicense.com/)
+  ## Contribution
+  
+   To contribute to this application, ${data.contribution}.
+  Here are the steps needed for doing that:
+  - Fork the repo
+  - Create a feature branch (git checkout -b NAME-HERE)
+  - Add stages (git add .)
+  - Commit your new feature (git commit -m 'Add some feature')
+  - Push your branch (git push)
+  - Create a new Pull Request
+  After reviewing, your feature will be merged.
+  ## Tests
+  
+  To run tests on it, run the following command :
+  
+        ${data.test}
+  
+  ## Contact Information
+  If you have any questions, Feel free to contact me with  the information below:
+  Github: ${data.username}
+  Email: ${data.email}
+  
+  ## Credits
+  
+  ### Collaborators
+  ${data.credits}
+
 `;
 }
 
 module.exports = generateMarkdown;
-// ## Description
-  
-// ${data.description}
-
-// ## Table of Contents
-
-// * [Installation](#installation)
-// * [Usage](#usage)
-// * [License](#license)
-// * [Contributing](#contributing)
-// * [Tests](#tests)
-// * [Questions](#question)
-// * [Credits](#credits)
-
-// ## Installation
-
-// To install required dependencies, run the following command :
-
-//        ${data.dependencies}
-
-
-// ## Usage
-
-// ${data.usage}
-
-// ## License
-// ${license} 
-// To get more information in relation to licence types, please visit this link - [https: //choosealicense.com/](https://choosealicense.com/)
-// ## Contributing
-
-// ${data.Contribution}
-
-// ## Tests
-
-// To run tests on it, run the following command :
-
-//       ${data.test}
-
-
-// ## Contribution
-
-//  To contribute to this application, ${data.contribution}.
-// Here are the steps needed for doing that:
-// - Fork the repo
-// - Create a feature branch (git checkout -b NAME-HERE)
-// - Add stages (git add .)
-// - Commit your new feature (git commit -m 'Add some feature')
-// - Push your branch (git push)
-// - Create a new Pull Request
-
-// After reviewing, your feature will be merged.
-
-// ## Contact Information
-// If you have any questions, Feel free to contact me with  the information below:
-// Github: ${data.username}
-// Email: ${data.email}
-
-// ## Credits
-
-// ### Collaborators
-// ${data.credits}
