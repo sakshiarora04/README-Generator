@@ -52,7 +52,10 @@ Link to walkthrough video in Screencastify:
 https://app.screencastify.com/manage/videos/osMqjiNpfEkVuR1FJix4
 
 The following images show the application's appearance and functionality :
-![Justmovie](assets/images/justmovie.gif)
+
+![nodejs](./Develop/assets/images/nodejs.png)
+
+![sample-readme](./Develop/assets/images/sample-readme.gif)
 
 
 ## Contribution
