@@ -77,7 +77,7 @@ function generateMarkdown(data) {
   * [License](#license)
   * [Contribution](#contribution)
   * [Tests](#tests)
-  * [Contact Information](#contact information)
+  * [Contact Information](#contactinformation)
   * [Credits](#credits)
   
   ## Installation
@@ -85,18 +85,20 @@ function generateMarkdown(data) {
   To install required dependencies, run the following command :
   
          ${data.dependencies}
-  
-  
+    
   ## Usage
   
   ${data.usage}
   
   ## License
-  ${license} 
-  To get more information in relation to licence types, please visit this link - [https: //choosealicense.com/](https://choosealicense.com/)
-  ## Contribution
   
-   To contribute to this application, ${data.contribution}.
+  ${licence} 
+
+  To get more information in relation to licence types, please visit this link - [https: //choosealicense.com/](https://choosealicense.com/)
+  
+  ## Contribution
+
+  To contribute to this application, ${data.contribution}.
   Here are the steps needed for doing that:
   - Fork the repo
   - Create a feature branch (git checkout -b NAME-HERE)
@@ -105,8 +107,9 @@ function generateMarkdown(data) {
   - Push your branch (git push)
   - Create a new Pull Request
   After reviewing, your feature will be merged.
+
   ## Tests
-  
+
   To run tests on it, run the following command :
   
         ${data.test}
