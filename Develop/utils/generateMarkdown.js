@@ -1,5 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Function that returns a license badge based on which license is passed in
+// If there is no license, it returns an empty string
 
 function renderLicenseBadge(licenceChoice) {
  let licenceBadge;
@@ -22,8 +22,8 @@ function renderLicenseBadge(licenceChoice) {
   return licenceBadge;
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Function that returns the license link
+// If there is no license, it returns an empty string
 function renderLicenseLink(licenseChoice) {
   let licenceLink;
   switch (licenseChoice) {
@@ -45,26 +45,26 @@ function renderLicenseLink(licenseChoice) {
   return licenceLink;
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(licenceName) {
- 
- const licenceSection= `Licence used for this project- ${licenceName}`;
-  
+// Function that returns the license section of README
+// If there is no license, it returns an empty string
+function renderLicenseSection(licenceName) { 
+ const licenceSection= `Licence used for this project- ${licenceName}`;  
   return licenceSection;
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(data) {
-  let licence;
- const badge= renderLicenseBadge(`${data.licence}`);
- if(badge===''){
+let licence;
+// create badge
+const badge= renderLicenseBadge(`${data.licence}`);
+if(badge===''){
   licence='N/A';
  }
- else{
- licence= renderLicenseSection(`${data.licence}`);
+else{
+licence= renderLicenseSection(`${data.licence}`);
  }
-  return `# ${data.title}
+// return md file
+return `# ${data.title}
   ${badge}
   ## Description
   
@@ -72,13 +72,13 @@ function generateMarkdown(data) {
   
   ## Table of Contents
   
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [License](#license)
-  * [Contribution](#contribution)
-  * [Tests](#tests)
-  * [Contact Information](#contactinformation)
-  * [Credits](#credits)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contribution](#contribution)
+  - [Tests](#tests)
+  - [Contact Information](#contact-information)
+  - [Credits](#credits)
   
   ## Installation
   
@@ -91,7 +91,7 @@ function generateMarkdown(data) {
   ${data.usage}
   
   ## License
-  
+
   ${licence} 
 
   To get more information in relation to licence types, please visit this link - [https: //choosealicense.com/](https://choosealicense.com/)
@@ -114,10 +114,12 @@ function generateMarkdown(data) {
   
         ${data.test}
   
-  ## Contact Information
+  ## Questions
   If you have any questions, Feel free to contact me with  the information below:
-  Github: ${data.username}
-  Email: ${data.email}
+
+  Github: [${data.username}](https://github.com/${data.username})
+
+  EmailId: ${data.email}
   
   ## Credits
   
@@ -126,5 +128,5 @@ function generateMarkdown(data) {
 
 `;
 }
-
+// export generatemarkdown function
 module.exports = generateMarkdown;

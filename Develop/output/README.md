@@ -11,7 +11,7 @@
   * [License](#license)
   * [Contribution](#contribution)
   * [Tests](#tests)
-  * [Contact Information](#contactinformation)
+  * [Contact Information](#contact-information)
   * [Credits](#credits)
   
   ## Installation
@@ -26,7 +26,9 @@
    The application then takes all responses and will dynamically generate markdown file for your project with Descriptiom, Table of contents, Installation, Uses, Licence, Contributions etc in the output folder and message will displayed as 'Successfully created README.md'. The README will also include badge for selected licence.   
   
   ## License
+  
   Licence used for this project- MIT 
+  
   To get more information in relation to licence types, please visit this link - [https: //choosealicense.com/](https://choosealicense.com/)
 
 
@@ -50,8 +52,10 @@
   
   ## Contact Information
   If you have any questions, Feel free to contact me with  the information below:
-  Github: sakshiarora04
-  Email: sakshiarora245@gmail.com
+
+  Github: [sakshiarora04](https://github.com/sakshiarora04)
+
+  EmailId: sakshiarora245@gmail.com
   
   ## Credits
   

@@ -2,7 +2,7 @@
 
   ## Description
 
-README file is important part of any application. It contains quality information of the app like What the app is for, how to install the required tools, how to use the app, how to make contibutions to improve the efficiency of the application.
+ README file is important part of any application. It contains quality information of the app like What the app is for, how to install the required tools, how to use the app, how to make contibutions to improve the efficiency of the application.
 This README generator is command line application that runs with node.js and allows user to dynamically generate README.md file with Descriptiom, Table of contents, Installation, Uses, Licence, Contributions etc based upon the input entered in regard to questions prompted. This README file generator displays licence badge at top the file. This will allow a project creator to spend more time working on finishing the project and less time on creating a good README.
    
 
@@ -40,9 +40,9 @@ This README generator is command line application that runs with node.js and all
 
   ## Usage
 
-  When user runs node index.js command after opening integrated terminal on right clicking the repo folder, the application prompts the series of questions related to project and also asks about github username and email id using the inquirer package.
+  When user runs node index.js command after opening integrated terminal on right clicking the repo folder, the application prompts the series of questions related to application repository and also asks about github username and email id using the inquirer package.
 
-  The application then takes all responses and will dynamically generate markdown file for your project with Descriptiom, Table of contents, Installation, Uses, Licence, Contributions etc in the output folder and message will displayed as 'Successfully created README.md'. If user doesn't answer the question related to install dependencies and run test then it will display default answers otherwise for all other inputs if question is not answered it will pass empty string and displays nothing on that section. The README will also include badge for selected licence.
+  The application then takes all responses and will dynamically generate high quality markdown file for your project with Descriptiom, Table of contents, Installation, Uses, Licence, Contributions etc in the output folder and message will displayed as 'Successfully created README.md'. If user doesn't answer the question related to install dependencies and run test then it will display default answers otherwise for all other inputs if question is not answered it will pass empty string and displays nothing on that section. The README will also include badge for selected licence.
 
   Link to walkthrough video :
 
