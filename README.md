@@ -12,7 +12,7 @@ This README generator is command line application that runs with node.js and all
 - [Usage](#usage)
 - [Contribution](#contribution)
 - [Credits](#credits)
-- [Credits](#credits) 
+- [Contact Information](#contact-information) 
 
 ## Installation
 
@@ -44,16 +44,26 @@ When user runs node index.js command after opening integrated terminal on right 
 The application then takes all responses and will dynamically generate high quality markdown file for your project with Descriptiom, Table of contents, Installation, Uses, Licence, Contributions etc in the output folder and message will displayed as 'Successfully created README.md'. If user doesn't answer the question related to install dependencies and run test then it will display default answers otherwise for all other inputs if question is not answered it will pass empty string and displays nothing on that section. The README will also include badge for selected licence.
 
 Link to walkthrough video in google drive:
-https://drive.google.com/file/d/1_vkDPnzlCEKL_jeW1UEsbq7rZuo8_ZMC/view
+
+https://drive.google.com/file/d/1Ve4nlMDyGd3w2wrMK1C_G1Jt82kZqZ35/view?usp=drive_link
 
 Link to walkthrough video in Screencastify:
+
 https://app.screencastify.com/manage/videos/osMqjiNpfEkVuR1FJix4
 
 The following images show the application's appearance and functionality :
 
+* Command line
+
 ![nodejs](./Develop/assets/images/nodejs.png)
 
+* Sample readme
+
 ![sample-readme](./Develop/assets/images/sample-readme.gif)
+
+* Walkthrough
+
+![walkthrough](./Develop/assets/images/walkthrough.gif)
 
 
 ## Contribution
